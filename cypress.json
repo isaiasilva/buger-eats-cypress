@@ -1,0 +1,7 @@
+{
+    "projectId": "cxuard",
+    "viewportWidth": 1440,
+    "viewportHeight": 900,
+    "defaultCommandTimeout": 10000,
+    "baseUrl": "https://buger-eats-qa.vercel.app"
+}

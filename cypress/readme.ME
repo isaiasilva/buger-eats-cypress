@@ -1,0 +1,32 @@
+Novo Projeto de Automação com Cypress
+1. 
+
+
+1. Componente de upload de arquivos
+npm install cypress-file-upload --save-dev
+
+2. cypress faz a busca de arquivos contidos dentro da pasta fixtures - não há portanto necessidade de passar o path completo de uma imagem/arquivos
+
+3. Ao importar "import signup from '../pages/SignupPage'"  e ao exportar  "export default new SignupPage;"
+já faz a exportação e importação da classe page como uma nova instancia, não necessitando assim do uso de:
+// var signup = new SignupPage()
+
+4. Utilizado o function() padrão do javascript -  ao invés do arrow function ()=>, devido ao beneficio do uso de variavel de contexto
+para obter o beneficio da massa de teste externalizada pelo Json.
+
+5. Instalar lib faker
+npm install faker@5.5.3 --save-dev
+
+6. Gerar e validar cpf
+npm install gerador-validador-cpf --save
+
+7. Gerar vídeos e screenshots (Executa os testes em modo backgroud)
+npx cypress run
+
+8. Executando em outro Browser diferente do default -> Eletron
+npx cypress run -b chrome
+npx cypress run -b edge
+npx cypress run -b firefox
+
+9. Instalando cucumber
+npm install --save-dev cypress cypress-cucumber-preprocessor
